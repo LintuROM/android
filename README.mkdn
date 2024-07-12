@@ -140,7 +140,21 @@ riseup <device> <build-type>
 rise fb
 ```
 
-**Building signed ota package**
+**Signed build(Replacing testkey with releasekey for play integrity, certification etc.)**
+```bash
+riseup <device> <build-type> 
+```
+```bash
+# Perform manual key generation
+# 'genkeys' will include keys from vendor/lineage-priv/keys
+# after generating keys
+genkeys
+
+# Build the firmware with the preferred method except for 'rise sb'
+rise <method>
+```
+
+**Building fully signed ota package**
 ```bash
 riseup <device> <build-type> 
 ```
@@ -153,20 +167,6 @@ riseup <device> <build-type>
 # (Automatic generation of keys will be performed if keys do not exist).
 # For manual key generation, please use "genkeys":
 rise sb
-```
-
-**Replacing testkey with releasekey**
-```bash
-riseup <device> <build-type> 
-```
-```bash
-# Perform manual key generation
-# 'genkeys' will include keys from vendor/lineage-priv/keys
-# after generating keys
-genkeys
-
-# Build the firmware with the preferred method except for 'rise sb'
-rise <method>
 ```
 
 **Opting out of signed builds**
