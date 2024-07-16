@@ -18,7 +18,7 @@
 
 
   <!-- Bootable Recovery  -->
-  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="lintu" />
+  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" revision="lineage-21.0" remote="lintu" />
 
   <!-- Build  -->
   <project path="build/make" name="android_build" groups="pdk,sysui-studio" remote="lintu" >
