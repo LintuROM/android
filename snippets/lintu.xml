@@ -49,7 +49,7 @@
 
 <!-- Vendor Stuff -->
 <project path="vendor/lintu" name="android_vendor_lintu" remote="lintu" />
-<project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="lintu" />
+<project path="vendor/pixel-framework" name="vendor_pixel-framework" revision="14" remote="lintu" />
 <project path="vendor/fontage" name="vendor_fontage" revision="14" remote="lintu" />
 <project path="vendor/overlay" name="vendor_overlay" revision="14" remote="lintu" />
 
